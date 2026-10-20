@@ -3,20 +3,19 @@
 > **The Definitive Superpower Skill Suite for AI Coding Agents.**  
 > Drop-in engineering skills for **Cursor**, **Claude Code**, **Windsurf**, and **Copilot** that eliminate code bloat, generate publication-grade diagrams, harden security, and enforce Apple/Linear craft.
 
-```text
-   █████╗  ██████╗ ███████╗███╗   ██╗████████╗     █████╗ ██████╗ ███████╗███████╗███╗   ██╗ █████╗ ██╗     
-  ██╔══██╗██╔════╝ ██╔════╝████╗  ██║╚══██╔══╝    ██╔══██╗██╔══██╗██╔════╝██╔════╝████╗  ██║██╔══██╗██║     
-  ███████║██║  ███╗█████╗  ██╔██╗ ██║   ██║       ███████║██████╔╝███████╗█████╗  ██╔██╗ ██║███████║██║     
-  ██╔══██║██║   ██║██╔══╝  ██║╚██╗██║   ██║       ██╔══██║██╔══██╗╚════██║██╔══╝  ██║╚██╗██║██╔══██║██║     
-  ██║  ██║╚██████╔╝███████╗██║ ╚████║   ██║       ██║  ██║██║  ██║███████║███████╗██║ ╚████║██║  ██║███████╗
-  ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝   ╚═╝       ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
-```
-
+[![Live Playground](https://img.shields.io/badge/Live_Playground-vernedaily.xyz%2Farsenal-00F0FF?style=for-the-badge&logo=cloudflare&logoColor=black)](https://vernedaily.xyz/arsenal)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org)
 [![Cursor Ready](https://img.shields.io/badge/Cursor-Supported-purple.svg)](https://cursor.com)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Supported-orange.svg)](https://anthropic.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Tchapwo1/agent-arsenal)
+
+---
+
+## 🌐 Instant Web Playground (1-Click Copy)
+
+Explore and copy all 10 skills directly from your browser without terminal:  
+👉 **[vernedaily.xyz/arsenal](https://vernedaily.xyz/arsenal)**
 
 ---
 
