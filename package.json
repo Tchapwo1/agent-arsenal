@@ -5,7 +5,7 @@
   "main": "src/catalog.js",
   "type": "module",
   "bin": {
-    "agent-arsenal": "./bin/agent-arsenal.js"
+    "agent-arsenal": "bin/agent-arsenal.js"
   },
   "scripts": {
     "start": "node ./bin/agent-arsenal.js",
