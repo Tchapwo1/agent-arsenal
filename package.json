@@ -1,0 +1,33 @@
+{
+  "name": "agent-arsenal",
+  "version": "1.0.0",
+  "description": "The Superpower Skill Suite for AI Coding Agents (Cursor, Claude Code, Windsurf, Copilot)",
+  "main": "src/catalog.js",
+  "type": "module",
+  "bin": {
+    "agent-arsenal": "./bin/agent-arsenal.js"
+  },
+  "scripts": {
+    "start": "node ./bin/agent-arsenal.js",
+    "test": "node ./bin/agent-arsenal.js list"
+  },
+  "keywords": [
+    "agent-skills",
+    "cursor",
+    "cursorrules",
+    "claude-code",
+    "windsurf",
+    "ai-agents",
+    "developer-tools",
+    "anti-bloat",
+    "cli"
+  ],
+  "author": "Tchapwo1",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.0"
+  }
+}
