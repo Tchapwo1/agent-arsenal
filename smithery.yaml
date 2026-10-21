@@ -1,0 +1,14 @@
+# Smithery.ai MCP Server Configuration
+# https://smithery.ai
+name: agent-arsenal
+description: The Superpower Skill Suite for AI Coding Agents and Claude Code. Slashes agent code bloat by 60%, draws ASCII architecture diagrams, and hardens security.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    config => ({
+      command: 'npx',
+      args: ['agent-arsenal', 'list']
+    })
