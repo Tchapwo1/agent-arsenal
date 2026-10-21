@@ -1,0 +1,17 @@
+---
+description: Autonomous defense against leaked API secrets, SQL injections, SSRF, and indirect prompt injection.
+globs: *
+alwaysApply: false
+---
+
+# 🛡️ Security Shield: Agent Red-Team Audit
+
+Enforce airtight runtime security boundaries on all code and agent workflows.
+
+## 🚫 Non-Negotiable Directives
+1. **Never Hardcode Secrets:** Block hardcoded API keys, bearer tokens, and private RSA keys.
+2. **Boundary Validation:** Enforce strict Zod/Pydantic validation on all external inputs before execution.
+3. **SSRF Hardening:** Validate outbound URLs against cloud metadata endpoints (`169.254.169.254`) and private IP ranges.
+4. **Indirect Prompt Injection:** Enforce XML delimiter encapsulation (`<user_data>...</user_data>`) around untrusted third-party content.
+
+*Interactive security audit: [vernedaily.xyz/arsenal](https://vernedaily.xyz/arsenal)*

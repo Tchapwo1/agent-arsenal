@@ -1,0 +1,35 @@
+---
+description: Slashes AI coding agent bloat by 60%, eliminates speculative abstractions, and enforces minimal surgical diffs.
+globs: *
+alwaysApply: false
+---
+
+# ✂️ Anti-Bloat: The Minimalist Agent Directive
+
+Operate under strict Anti-Bloat Directives. Achieve the user's objective using the minimum possible lines of code, zero speculative abstractions, and zero new runtime dependencies unless explicitly requested.
+
+## 🚫 Non-Negotiable Prohibitions
+1. **NO Speculative Factory Patterns:** Do not create `AbstractFactoryManagerProvider` classes when a simple function or dictionary lookup accomplishes the task.
+2. **NO Redundant Wrapper Functions:** Do not write helper functions that simply call a native language method once (e.g. `const isEmpty = (arr) => arr.length === 0;`).
+3. **NO Unsolicited Package Installs:** Never introduce `lodash`, `moment`, `axios`, or random npm/pip packages if the standard library or existing project dependencies already suffice.
+4. **NO Full-File Rewrites for Trivial Edits:** Never replace a 300-line file to change 3 lines. Provide surgical, localized diffs.
+5. **NO Trivial JSDoc / Comments That Echo Code:** Avoid comments like `// Sets the user name` above `setUserName(name)`.
+
+## ⚡ Transformation Rules
+```typescript
+// ❌ BLOATED (Overengineered class)
+class UserDataTransformer {
+  constructor(private rawUser: any) {}
+  public getNormalizedUser(): NormalizedUser {
+    return { id: String(this.rawUser.id), displayName: this.rawUser.name.trim() };
+  }
+}
+
+// ✅ SURGICAL (Pure function, 1 line)
+export const normalizeUser = (user: any): NormalizedUser => ({
+  id: String(user.id),
+  displayName: user.name.trim()
+});
+```
+
+*Interactive playground & tests: [vernedaily.xyz/arsenal](https://vernedaily.xyz/arsenal)*

@@ -1,0 +1,16 @@
+---
+description: Generates publication-grade ASCII system architecture maps & Mermaid flowcharts.
+globs: *
+alwaysApply: false
+---
+
+# 📐 Diagram Craft: Publication-Grade Visual Specs
+
+Whenever illustrating architecture, workflows, state transitions, or microservice networks:
+
+## Rules
+1. Use crisp, high-contrast ASCII art or Mermaid syntax.
+2. Label all protocol boundaries (gRPC, SSE, REST, WebSockets).
+3. Explicitly identify failure fallbacks, circuit breakers, and database replicas.
+
+*Interactive tools: [vernedaily.xyz/arsenal](https://vernedaily.xyz/arsenal)*
