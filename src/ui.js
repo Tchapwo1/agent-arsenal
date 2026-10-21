@@ -48,8 +48,11 @@ export function renderSuccess(installedSkills, targetPath, detectedEnv) {
     content += `  ${s.emoji}  ${chalk.greenBright(s.id)} ${chalk.dim('— ' + s.triggers[0])}\n`;
   });
 
-  content += `\n${chalk.yellowBright('👉 How to trigger in Cursor / Claude Code:')}\n`;
-  content += chalk.white(`   "Please apply the ${installedSkills[0]?.id || 'anti-bloat'} skill to this task."\n`);
+  content += `\n${chalk.bold.yellowBright('👉 In Claude Code (Terminal Slash Commands):')}\n`;
+  content += chalk.white(`   Type: ${chalk.greenBright(`/skill ${installedSkills[0]?.id || 'anti-bloat'}`)}  or direct shorthand: ${chalk.greenBright(`/${installedSkills[0]?.id || 'anti-bloat'}`)}\n\n`);
+
+  content += `${chalk.bold.yellowBright('👉 In Cursor / Claude Projects:')}\n`;
+  content += chalk.white(`   Prompt: "Apply the ${installedSkills[0]?.id || 'anti-bloat'} skill to this task."\n`);
 
   console.log(
     boxen(content.trim(), {

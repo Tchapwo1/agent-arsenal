@@ -21,25 +21,29 @@ Explore and copy all 10 skills directly from your browser without terminal:
 
 ## ⚡ 1-Second Quick Start
 
-No installation or clone required. View the arsenal directly in your terminal:
+### Install into Claude Code (Native Slash Commands)
 
+Run in your project root:
 ```bash
-npx agent-arsenal list
+# Installs skills AND native Claude Code slash commands
+npx agent-arsenal add --all
 ```
 
-### Install Skills into Your Active Workspace
+Then in your Claude Code session, simply type:
+```text
+/skill anti-bloat
+```
+Or use the direct shorthand commands:
+* `/anti-bloat` — Force minimal code, zero classes, and surgical diffs
+* `/diagram` — Generate publication-grade ASCII system maps or Mermaid charts
+* `/security` — Audit code for prompt injection, leaked keys, and SQLi
+* `/polish` — Apply Apple/Linear design tokens and micro-elevations
 
-Agent Arsenal automatically detects whether you're using **Cursor**, **Claude Code**, **Windsurf**, or **Antigravity** and installs the markdown skill into the right directory (`.cursor/skills/`, `.claude/skills/`, or `.agent-skills/`):
+---
 
+### Install into Cursor (.cursorrules)
 ```bash
-# Install the flagship Anti-Bloat skill
 npx agent-arsenal add anti-bloat
-
-# Install diagram & architecture generation
-npx agent-arsenal add diagram-craft
-
-# Install the complete 10-skill arsenal in one shot
-npx agent-arsenal add --all
 ```
 
 ---
